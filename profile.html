@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Profile Section -->
+    <section class="baby">
+        <div class="profile-container">
+            <div class="kvssh-text" id="userName">
+                Lavish Brielle
+            </div>
+            <a href="main.html" style="color: unset; text-decoration: none;">
+                <div class="profile">
+                    <span class="material-icons profile-icon">person</span>
+                    <div class="profile-info">
+                        <span></span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- User Details -->
+    <section class="flex-container">
+        <div class="contain1">
+            <div>Welcome: </div><br>
+            <div class="plays">
+                <div class="media bd" style="font-size: 15px;">"You haven’t purchased a video yet! Don’t miss out on
+                    exclusive content made just for you. Click the profile icon above to check out our videos and get
+                    one today!"</div>
+                <div class="media ed" id="userEmail">
+                    <!-- User Email will be displayed here -->
+                </div>
+            </div>
+        </div>
+        <button onclick="logout()" style="padding: 10px 8px; border: none;background-color: #333;color: #fff;border-radius: 8px;">Logout</button>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    const token = localStorage.getItem('token');
+    if (!token) {
+        window.location.href = 'index.html'; // Redirect to login if no token
+    }
+});
+ 
+        function logout() {
+            localStorage.removeItem('token'); // Remove token
+            alert('Logout successful! Redirecting to login...', true);
+            setTimeout(() => {
+                window.location.href = 'index.html';
+            }, 2000); // 2 seconds delay
+        }
+    </script>
+</body>
+
+</html>

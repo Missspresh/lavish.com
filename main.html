@@ -1,0 +1,323 @@
+<!-- JavaScript -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavish Brielle</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        /* Popup message styles */
+        .popup-container {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            z-index: 1000;
+        }
+
+        .copy-notification {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .copy-notification.show {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Profile Section -->
+    <section class="baby">
+        <div class="profile-container">
+            <div class="kvssh-text" id="userEmail">
+                Lavish Brielle 
+            </div>
+
+            <a href="profile.html" style="color: unset; text-decoration: none;">
+                <div class="profile">
+                    <span class="material-icons profile-icon">person</span>
+                    <div class="profile-info">
+                        <span></span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Card 1 -->
+    <div class="contain1">
+        <!-- autoplay muted loop playsinline -->
+        <video class="video-player" autoplay muted loop playsinline aria-autocomplete="auto">
+            <source src="video/vid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="plays">
+            <div class="media bd"><i class="material-icons eye-icon">visibility</i>1.7m views</div>
+            <div class="media ed">00:11</div>
+        </div>
+    </div>
+    <!-- Flex Container Section -->
+    <section class="flex-container">
+        <!-- Card 1 -->
+        <div class="contain">
+            <div class="images">
+                <img src="images/pic (9).jpg" alt="Fashion Image 1" />
+                <button class="play-button" aria-label="Play Video 1">▶</button>
+            </div>
+            <div class="plays">
+                <div class="media bd"><i class="material-icons eye-icon">visibility</i>527k </div>
+                <div class="media ed">35:29 </div>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="contain">
+            <div class="images">
+                <img src="images/pic (11).jpg" alt="Fashion Image 2" />
+                <button class="play-button" aria-label="Play Video 2">▶</button>
+            </div>
+            <div class="plays">
+                <div class="media bd"><i class="material-icons eye-icon">visibility</i>480k</div>
+                <div class="media ed">40:30</div>
+            </div>
+        </div>
+        <div class="contain">
+            <div class="images">
+                <img src="images/pic (12).jpg" alt="Fashion Image 2" />
+                <button class="play-button" aria-label="Play Video 2">▶</button>
+            </div>
+            <div class="plays">
+                <div class="media bd"><i class="material-icons eye-icon">visibility</i>275k</div>
+                <div class="media ed">25:30</div>
+            </div>
+        </div>
+        <div class="contain">
+            <div class="images">
+                <img src="images/pic (13).jpg" alt="Fashion Image 2" />
+                <button class="play-button" aria-label="Play Video 2">▶</button>
+            </div>
+            <div class="plays">
+                <div class="media bd"><i class="material-icons eye-icon">visibility</i>844k</div>
+                <div class="media ed">15:01</div>
+            </div>
+        </div>
+
+        <div class="contain1">
+            <!-- autoplay muted loop playsinline -->
+            <video class="video-player" autoplay muted loop playsinline aria-autocomplete="auto">
+                <source src="video/vid2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+    
+            <div class="plays">
+                <div class="media bd"><i class="material-icons eye-icon">visibility</i>990k views</div>
+                <div class="media ed">00:26</div>
+            </div>
+        </div>
+
+        <div class="contain">
+            <div class="images">
+                <img src="images/pic (14).jpg" alt="Fashion Image 2" />
+                <button class="play-button" aria-label="Play Video 2">▶</button>
+            </div>
+            <div class="plays">
+                <div class="media bd"><i class="material-icons eye-icon">visibility</i>743k</div>
+                <div class="media ed">28:00</div>
+            </div>
+        </div>
+        <div class="contain">
+            <div class="images">
+                <img src="images/pic (15).jpg" alt="Fashion Image 2" />
+                <button class="play-button" aria-label="Play Video 2">▶</button>
+            </div>
+            <div class="plays">
+                <div class="media bd"><i class="material-icons eye-icon">visibility</i>934k</div>
+                <div class="media ed">25:12</div>
+            </div>
+        </div>
+
+        <div class="contain1">
+            <!-- autoplay muted loop playsinline -->
+            <video class="video-player" autoplay muted loop playsinline aria-autocomplete="auto">
+                <source src="video/vid3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+    
+            <div class="plays">
+                <div class="media bd"><i class="material-icons eye-icon">visibility</i>2m views</div>
+                <div class="media ed">00:20</div>
+            </div>
+        </div>
+
+        <div class="contain">
+            <div class="images">
+                <img src="images/pic (2).jpg" alt="Fashion Image 2" />
+                <button class="play-button" aria-label="Play Video 2">▶</button>
+            </div>
+            <div class="plays">
+                <div class="media bd"><i class="material-icons eye-icon">visibility</i>1.2m</div>
+                <div class="media ed">22:08</div>
+            </div>
+        </div>
+        <div class="contain">
+            <div class="images">
+                <img src="images/pic (16).jpg" alt="Fashion Image 2" />
+                <button class="play-button" aria-label="Play Video 2">▶</button>
+            </div>
+            <div class="plays">
+                <div class="media bd"><i class="material-icons eye-icon">visibility</i>567k</div>
+                <div class="media ed">45:55</div>
+            </div>
+        </div>
+
+        <div class="contain1">
+            <!-- autoplay muted loop playsinline -->
+            <video class="video-player" autoplay muted loop playsinline aria-autocomplete="auto">
+                <source src="video/vid4.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+    
+            <div class="plays">
+                <div class="media bd"><i class="material-icons eye-icon">visibility</i>750k views</div>
+                <div class="media ed">00:18</div>
+            </div>
+        </div>
+
+        <div class="contain">
+            <div class="images">
+                <img src="images/pic (19).jpg" alt="Fashion Image 2" />
+                <button class="play-button" aria-label="Play Video 2">▶</button>
+            </div>
+            <div class="plays">
+                <div class="media bd"><i class="material-icons eye-icon">visibility</i>835k</div>
+                <div class="media ed">36:10</div>
+            </div>
+        </div>
+        <div class="contain">
+            <div class="images">
+                <img src="images/pic (20).jpg" alt="Fashion Image 2" />
+                <button class="play-button" aria-label="Play Video 2">▶</button>
+            </div>
+            <div class="plays">
+                <div class="media bd"><i class="material-icons eye-icon">visibility</i>754k</div>
+                <div class="media ed">18:04</div>
+            </div>
+        </div>
+        <div class="contain">
+            <div class="images">
+                <img src="images/pic (21).jpg" alt="Fashion Image 2" />
+                <button class="play-button" aria-label="Play Video 2">▶</button>
+            </div>
+            <div class="plays">
+                <div class="media bd"><i class="material-icons eye-icon">visibility</i>564k</div>
+                <div class="media ed">8:30</div>
+            </div>
+        </div>
+        <div class="contain">
+            <div class="images">
+                <img src="images/pic (10).jpg" alt="Fashion Image 2" />
+                <button class="play-button" aria-label="Play Video 2">▶</button>
+            </div>
+            <div class="plays">
+                <div class="media bd"><i class="material-icons eye-icon">visibility</i>364k</div>
+                <div class="media ed">16:09</div>
+            </div>
+        </div>
+
+        <br />
+        <br />
+    </section>
+    <footer>
+        <div class="footer">
+            Lavish Brielle 2024
+        </div>
+    </footer>
+
+
+    <!-- Popup Div -->
+    <div id="popup" class="popup-container">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h3>Payment Method, BITCOIN</h3>
+            <p>Copy wallet address for payments.</p>
+            <p>$45 for each video</p>
+            <div class="wallet-section">
+                <input type="text" id="walletAddress" value="bc1qsfey3lx52wxheejfeh00h5fzzy30a69pq4htnl" readonly>
+                <button class="copy-btn">
+                    <span class="material-icons">content_copy</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- "Copied to clipboard" notification -->
+    <div id="copyNotification" class="copy-notification">
+        Copied to clipboard!
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Show popup when a play button is clicked
+        document.querySelectorAll('.play-button, .contain').forEach(item => {
+            item.addEventListener('click', function () {
+                document.getElementById('popup').style.display = 'flex'; // Show the popup
+            });
+        });
+
+        // Hide popup when close button is clicked
+        document.querySelector('.close-btn').addEventListener('click', function () {
+            document.getElementById('popup').style.display = 'none'; // Hide the popup
+        });
+
+        // Copy wallet address to clipboard
+        document.querySelector('.copy-btn').addEventListener('click', function () {
+            const walletAddress = document.getElementById('walletAddress').value;
+
+            // Use modern clipboard API for copying
+            navigator.clipboard.writeText(walletAddress)
+                .then(() => {
+                    console.log('Wallet address copied: ' + walletAddress);
+
+                    // Show the "Copied to clipboard" notification
+                    const copyNotification = document.getElementById('copyNotification');
+                    copyNotification.style.display = 'block';
+                    copyNotification.classList.add('show');
+
+                    // Hide the notification after 2 seconds
+                    setTimeout(() => {
+                        copyNotification.classList.remove('show');
+                        copyNotification.style.display = 'none';
+                    }, 2000);
+                })
+                .catch(err => {
+                    console.error('Error copying wallet address: ', err);
+                });
+        });
+    </script>
+</body>
+
+</html>
+</body>
+
+</html>
