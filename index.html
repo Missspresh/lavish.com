@@ -318,6 +318,33 @@
 
         // Add event listeners on DOM content loaded
         document.addEventListener('DOMContentLoaded', addEventListeners);
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const elements = document.querySelectorAll('img, video');
+
+    elements.forEach(function (element) {
+      let timer;
+      
+      // Detect touch start and start the timer
+      element.addEventListener('touchstart', function (e) {
+        timer = setTimeout(function () {
+          e.preventDefault(); // Prevent download options on long press
+        }, 500); // Customize long-press time as needed
+      });
+
+      // Cancel the timer if the touch ends or moves before the long press time
+      element.addEventListener('touchend', function () {
+        clearTimeout(timer);
+      });
+
+      element.addEventListener('touchmove', function () {
+        clearTimeout(timer);
+      });
+    });
+  });
+  
+
+        
     </script>
 </body>
 
