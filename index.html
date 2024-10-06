@@ -320,7 +320,7 @@
         document.addEventListener('DOMContentLoaded', addEventListeners);
 
   document.addEventListener('DOMContentLoaded', function () {
-    const elements = document.querySelectorAll('img, video');
+    const elements = document.querySelectorAll('.images, .video-player');
 
     elements.forEach(function (element) {
       let timer;
@@ -336,7 +336,7 @@
       element.addEventListener('touchend', function () {
         clearTimeout(timer);
       });
-
+        
       element.addEventListener('touchmove', function () {
         clearTimeout(timer);
       });
